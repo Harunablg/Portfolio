@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">My Portfolio</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-600">About</a></li>
+        <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-100 to-blue-200 text-center">
+    <h2 class="text-4xl md:text-6xl font-bold mb-4">Hello, I'm Haruna Idris</h2>
+    <p class="text-lg md:text-2xl mb-6">Cybersecurity Enthusiast & Web Developer</p>
+    <a href="#projects" class="px-6 py-3 bg-blue-600 text-white rounded-xl shadow-md hover:bg-blue-700 transition">View My Work</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
+    <p class="max-w-3xl mx-auto text-center text-lg">
+      I'm Haruna Idris, a cybersecurity enthusiast and front-end developer passionate about creating secure, user-friendly web applications.
+      My background in cybersecurity helps me design safer systems while building clean, modern websites.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
+        <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg">HTML</div>
+        <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg">CSS / Tailwind</div>
+        <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg">JavaScript</div>
+        <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg">Python</div>
+        <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg">Cybersecurity Basics</div>
+        <div class="p-6 bg-white rounded-2xl shadow hover:shadow-lg">Git & GitHub</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden">
+        <img src="https://via.placeholder.com/400x200" alt="Project 1" class="w-full">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Phishing Awareness Website</h3>
+          <p class="mb-4">An educational site to raise awareness about phishing attacks with interactive learning.</p>
+          <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700">View Project</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden">
+        <img src="https://via.placeholder.com/400x200" alt="Project 2" class="w-full">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Password Strength Checker</h3>
+          <p class="mb-4">A web app that checks password strength and warns against weak patterns.</p>
+          <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700">View Project</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden">
+        <img src="https://via.placeholder.com/400x200" alt="Project 3" class="w-full">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+          <p class="mb-4">A personal portfolio showcasing my skills and projects in web development & cybersecurity.</p>
+          <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Contact Me</h2>
+      <form class="max-w-lg mx-auto bg-white p-8 rounded-2xl shadow space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-xl" required>
+        <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-xl" required>
+        <textarea placeholder="Your Message" class="w-full p-3 border rounded-xl" rows="4" required></textarea>
+        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-xl hover:bg-blue-700">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-6 text-center shadow-inner">
+    <p>© 2025 Haruna Idris. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
